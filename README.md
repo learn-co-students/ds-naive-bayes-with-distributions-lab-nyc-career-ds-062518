@@ -176,19 +176,19 @@ for col in iris.feature_names:
 ```
 
 
-![png](output_10_0.png)
+![png](index_files/index_10_0.png)
 
 
 
-![png](output_10_1.png)
+![png](index_files/index_10_1.png)
 
 
 
-![png](output_10_2.png)
+![png](index_files/index_10_2.png)
 
 
 
-![png](output_10_3.png)
+![png](index_files/index_10_3.png)
 
 
 Do any of the features seem normally distributed, or least close to normally distributed? 
@@ -217,7 +217,7 @@ print("Testing Accuracy for Iris Dataset with Gaussian Naive Bayesian Classifier
 ```
 
     Testing Accuracy for Iris Dataset with Gaussian Naive Bayesian Classifier: 94.74%
-    
+
 
 Great! Our model was able to correctly predict which type of iris each flower was based on the data it was given with ~95% accuracy!
 
@@ -270,7 +270,7 @@ print("Accuracy on Testing Set from BernoulliNB Classifier: {:.4}%".format(berno
 ```
 
     Accuracy on Testing Set from BernoulliNB Classifier: 80.72%
-    
+
 
 With only the gender of the passenger and some information about whether or not the passenger is wealthy and/or a child, our `BernoulliNB` classifier was able to predict passenger survival with ~80% accuracy!
 
@@ -306,20 +306,20 @@ clean_df.head()
     Fare        0
     Embarked    0
     dtype: int64
-    
 
-    C:\Users\medio\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\frame.py:3694: SettingWithCopyWarning: 
+
+    /Users/lore.dirick/anaconda3/lib/python3.6/site-packages/ipykernel_launcher.py:5: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame
     
     See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-      errors=errors)
-    C:\Users\medio\AppData\Local\Continuum\anaconda3\lib\site-packages\ipykernel_launcher.py:6: SettingWithCopyWarning: 
+      """
+    /Users/lore.dirick/anaconda3/lib/python3.6/site-packages/ipykernel_launcher.py:6: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     
     See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
       
-    
+
 
 
 
@@ -431,13 +431,13 @@ clean_df.head()
 mnb_X_train, mnb_X_test, mnb_y_train, mnb_y_test = train_test_split(clean_df, multinomial_nb_labels)
 ```
 
-    C:\Users\medio\AppData\Local\Continuum\anaconda3\lib\site-packages\ipykernel_launcher.py:10: SettingWithCopyWarning: 
+    /Users/lore.dirick/anaconda3/lib/python3.6/site-packages/ipykernel_launcher.py:10: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     
     See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
       # Remove the CWD from sys.path while we load stuff.
-    
+
 
 In the cell below:
 
@@ -457,7 +457,7 @@ print("Testing Accuracy for Titanic Dataset with Multinomial Naive Bayesian Clas
 ```
 
     Testing Accuracy for Titanic Dataset with Multinomial Naive Bayesian Classifier: 70.79%
-    
+
 
 ### Conclusion
 
